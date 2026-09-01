@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="76mm" height="127mm" viewBox="0 0 76 127">
+  <title>SINNBILD 49 - symmetrische Kartenrückseite mit 3 mm Beschnitt</title>
+  <rect width="76" height="127" fill="#071A2F"/>
+  <g fill="#F4ECD8">
+    <circle cx="20" cy="45.5" r="1.35"/><circle cx="26" cy="45.5" r="1.35"/><circle cx="32" cy="45.5" r="1.35"/><circle cx="38" cy="45.5" r="1.35"/><circle cx="44" cy="45.5" r="1.35"/><circle cx="50" cy="45.5" r="1.35"/><circle cx="56" cy="45.5" r="1.35"/>
+    <circle cx="20" cy="51.5" r="1.35"/><circle cx="26" cy="51.5" r="1.35"/><circle cx="32" cy="51.5" r="1.35"/><circle cx="38" cy="51.5" r="1.35"/><circle cx="44" cy="51.5" r="1.35"/><circle cx="50" cy="51.5" r="1.35"/><circle cx="56" cy="51.5" r="1.35"/>
+    <circle cx="20" cy="57.5" r="1.35"/><circle cx="26" cy="57.5" r="1.35"/><circle cx="32" cy="57.5" r="1.35"/><circle cx="38" cy="57.5" r="1.35"/><circle cx="44" cy="57.5" r="1.35"/><circle cx="50" cy="57.5" r="1.35"/><circle cx="56" cy="57.5" r="1.35"/>
+    <circle cx="20" cy="63.5" r="1.35"/><circle cx="26" cy="63.5" r="1.35"/><circle cx="32" cy="63.5" r="1.35"/><circle cx="44" cy="63.5" r="1.35"/><circle cx="50" cy="63.5" r="1.35"/><circle cx="56" cy="63.5" r="1.35"/>
+    <circle cx="20" cy="69.5" r="1.35"/><circle cx="26" cy="69.5" r="1.35"/><circle cx="32" cy="69.5" r="1.35"/><circle cx="38" cy="69.5" r="1.35"/><circle cx="44" cy="69.5" r="1.35"/><circle cx="50" cy="69.5" r="1.35"/><circle cx="56" cy="69.5" r="1.35"/>
+    <circle cx="20" cy="75.5" r="1.35"/><circle cx="26" cy="75.5" r="1.35"/><circle cx="32" cy="75.5" r="1.35"/><circle cx="38" cy="75.5" r="1.35"/><circle cx="44" cy="75.5" r="1.35"/><circle cx="50" cy="75.5" r="1.35"/><circle cx="56" cy="75.5" r="1.35"/>
+    <circle cx="20" cy="81.5" r="1.35"/><circle cx="26" cy="81.5" r="1.35"/><circle cx="32" cy="81.5" r="1.35"/><circle cx="38" cy="81.5" r="1.35"/><circle cx="44" cy="81.5" r="1.35"/><circle cx="50" cy="81.5" r="1.35"/><circle cx="56" cy="81.5" r="1.35"/>
+  </g>
+  <g fill="#C98643">
+    <path d="M35.9 60.8 L37.25 61.85 L37.25 65.15 L35.9 66.2 Z"/>
+    <path d="M40.1 60.8 L38.75 61.85 L38.75 65.15 L40.1 66.2 Z"/>
+  </g>
+</svg>
