@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 10" role="img" aria-labelledby="title">
+  <title id="title">United States</title>
+  <rect width="19" height="10" fill="#fff"/>
+  <path fill="#b22234" d="M0 0h19v.77H0zm0 1.54h19v.77H0zm0 1.54h19v.77H0zm0 1.54h19v.77H0zm0 1.54h19v.77H0zm0 1.54h19v.77H0zm0 1.54h19V10H0z"/>
+  <rect width="7.6" height="5.39" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <circle cx=".65" cy=".55" r=".12"/><circle cx="1.7" cy=".55" r=".12"/><circle cx="2.75" cy=".55" r=".12"/><circle cx="3.8" cy=".55" r=".12"/><circle cx="4.85" cy=".55" r=".12"/><circle cx="5.9" cy=".55" r=".12"/><circle cx="6.95" cy=".55" r=".12"/>
+    <circle cx="1.18" cy="1.35" r=".12"/><circle cx="2.23" cy="1.35" r=".12"/><circle cx="3.28" cy="1.35" r=".12"/><circle cx="4.33" cy="1.35" r=".12"/><circle cx="5.38" cy="1.35" r=".12"/><circle cx="6.43" cy="1.35" r=".12"/>
+    <circle cx=".65" cy="2.15" r=".12"/><circle cx="1.7" cy="2.15" r=".12"/><circle cx="2.75" cy="2.15" r=".12"/><circle cx="3.8" cy="2.15" r=".12"/><circle cx="4.85" cy="2.15" r=".12"/><circle cx="5.9" cy="2.15" r=".12"/><circle cx="6.95" cy="2.15" r=".12"/>
+    <circle cx="1.18" cy="2.95" r=".12"/><circle cx="2.23" cy="2.95" r=".12"/><circle cx="3.28" cy="2.95" r=".12"/><circle cx="4.33" cy="2.95" r=".12"/><circle cx="5.38" cy="2.95" r=".12"/><circle cx="6.43" cy="2.95" r=".12"/>
+    <circle cx=".65" cy="3.75" r=".12"/><circle cx="1.7" cy="3.75" r=".12"/><circle cx="2.75" cy="3.75" r=".12"/><circle cx="3.8" cy="3.75" r=".12"/><circle cx="4.85" cy="3.75" r=".12"/><circle cx="5.9" cy="3.75" r=".12"/><circle cx="6.95" cy="3.75" r=".12"/>
+    <circle cx="1.18" cy="4.55" r=".12"/><circle cx="2.23" cy="4.55" r=".12"/><circle cx="3.28" cy="4.55" r=".12"/><circle cx="4.33" cy="4.55" r=".12"/><circle cx="5.38" cy="4.55" r=".12"/><circle cx="6.43" cy="4.55" r=".12"/>
+  </g>
+</svg>

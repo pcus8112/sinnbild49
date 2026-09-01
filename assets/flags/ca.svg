@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 3" role="img" aria-labelledby="title">
+  <title id="title">Canada / Québec français</title>
+  <rect width="6" height="3" fill="#fff"/>
+  <rect width="1.5" height="3" fill="#d80621"/>
+  <rect x="4.5" width="1.5" height="3" fill="#d80621"/>
+  <path fill="#d80621" d="M3 2.63l-.12-.58-.55.12.13-.34-.43-.26.31-.25-.2-.43.48.06.09-.48.29.35.29-.35.09.48.48-.06-.2.43.31.25-.43.26.13.34-.55-.12z"/>
+</svg>
