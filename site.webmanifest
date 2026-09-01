@@ -1,0 +1,17 @@
+{
+  "name": "SINNBILD49",
+  "short_name": "SINNBILD49",
+  "description": "49 images, ten positions, one question.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7ed",
+  "theme_color": "#071a2f",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
