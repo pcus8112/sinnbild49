@@ -1,19 +1,17 @@
 (function () {
   "use strict";
 
-  const supported = ["de", "en", "fr"];
+  const supported = ["en", "fr", "de"];
   const htmlLang = { de: "de-DE", en: "en-US", fr: "fr-CA" };
-  let currentLanguage = "de";
+  const languageStorageKey = "s49-language-v2";
+  let currentLanguage = "en";
 
   function chooseInitialLanguage() {
     const query = new URLSearchParams(window.location.search).get("lang");
     if (supported.includes(query)) return query;
-    const saved = window.localStorage.getItem("s49-language");
+    const saved = window.localStorage.getItem(languageStorageKey);
     if (supported.includes(saved)) return saved;
-    const browser = (navigator.language || "de").toLowerCase();
-    if (browser.startsWith("fr")) return "fr";
-    if (browser.startsWith("en")) return "en";
-    return "de";
+    return "en";
   }
 
   function text(key) {
@@ -24,7 +22,7 @@
     if (!supported.includes(language)) return;
     currentLanguage = language;
     document.documentElement.lang = htmlLang[language];
-    if (remember) window.localStorage.setItem("s49-language", language);
+    if (remember) window.localStorage.setItem(languageStorageKey, language);
     fillContactDetails();
 
     document.querySelectorAll("[data-i18n]").forEach((node) => {
@@ -44,8 +42,6 @@
       button.setAttribute("aria-pressed", active ? "true" : "false");
       button.classList.toggle("is-active", active);
     });
-    configureAmazonLinks();
-
     document.dispatchEvent(new CustomEvent("sinnbild:languagechange", {
       detail: { language }
     }));
@@ -63,23 +59,16 @@
       ? config.addressLine2[currentLanguage]
       : config.addressLine2;
     document.querySelectorAll("[data-address-2]").forEach((node) => { node.textContent = addressLine2; });
-    document.querySelectorAll("[data-year]").forEach((node) => { node.textContent = new Date().getFullYear(); });
-  }
-
-  function configureAmazonLinks() {
-    document.querySelectorAll("[data-amazon-link]").forEach((node) => {
-      const language = node.dataset.amazonLink === "auto" ? currentLanguage : node.dataset.amazonLink;
-      const url = window.SINNBILD_CONFIG.amazon[language];
-      if (url) {
-        node.href = url;
-        node.removeAttribute("aria-disabled");
-        node.classList.remove("is-disabled");
-      } else {
-        node.removeAttribute("href");
-        node.setAttribute("aria-disabled", "true");
-        node.classList.add("is-disabled");
-      }
+    document.querySelectorAll("[data-phone]").forEach((node) => {
+      node.textContent = config.phone;
+      if (node.tagName === "A") node.href = `tel:${config.phone.replace(/\s+/g, "")}`;
     });
+    document.querySelectorAll("[data-siret]").forEach((node) => { node.textContent = config.siret; });
+    const brandLine = typeof config.brandLine === "object"
+      ? config.brandLine[currentLanguage]
+      : config.brandLine;
+    document.querySelectorAll("[data-brand]").forEach((node) => { node.textContent = brandLine; });
+    document.querySelectorAll("[data-year]").forEach((node) => { node.textContent = new Date().getFullYear(); });
   }
 
   function setUpNavigation() {
@@ -113,7 +102,6 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     fillContactDetails();
-    configureAmazonLinks();
     setUpNavigation();
     setUpLanguageButtons();
     applyLanguage(chooseInitialLanguage(), false);
