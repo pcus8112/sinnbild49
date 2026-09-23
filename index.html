@@ -1,51 +1,51 @@
 <!doctype html>
-<html lang="de-DE">
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SINNBILD49 – Gedanken werden sichtbar</title>
-  <meta name="description" content="Eine kostenlose, nicht-esoterische Kartenmethode zur Selbstreflexion: eine Frage, 49 Bilder und ein Legebild aus zehn Sinnbilds.">
+  <title>SINNBILD49 – Thoughts become visible</title>
+  <meta name="description" content="A free, non-esoteric card method for self-reflection: one question, 49 images, and a ten-position layout.">
   <meta name="theme-color" content="#071a2f">
   <meta property="og:title" content="SINNBILD49">
-  <meta property="og:description" content="Bilder als Spiegel. Entscheidungen bleiben beim Menschen.">
+  <meta property="og:description" content="Images as mirrors. Decisions remain human.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sinnbild49.com/">
   <meta property="og:image" content="https://sinnbild49.com/assets/logo/sinnbild49-logo.png">
   <link rel="canonical" href="https://sinnbild49.com/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/config.js"></script>
+  <link rel="stylesheet" href="css/styles.css?v=20260923-1">
+  <script defer src="js/config.js?v=20260923-1"></script>
   <script defer src="js/cards.js"></script>
-  <script defer src="js/i18n.js"></script>
+  <script defer src="js/i18n.js?v=20260923-1"></script>
   <script defer src="js/handbook-utils.js"></script>
-  <script defer src="js/site.js"></script>
+  <script defer src="js/site.js?v=20260923-1"></script>
   <script defer src="js/reading.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="masthead">
     <div class="brand-row">
-      <a class="brand-link" href="index.html" aria-label="SINNBILD49 Startseite">
+      <a class="brand-link" href="index.html" aria-label="SINNBILD49 home">
         <img src="assets/logo/sinnbild49-logo.png" alt="SINNBILD49">
       </a>
       <div class="language-switcher" aria-label="Language / Sprache / Langue">
-        <button class="language-button" type="button" data-language="de" aria-label="Deutsch (Deutschland)" aria-pressed="true"><img src="assets/flags/de.svg" alt=""></button>
-        <button class="language-button" type="button" data-language="en" aria-label="English (United States)" aria-pressed="false"><img src="assets/flags/us.svg" alt=""></button>
-        <button class="language-button" type="button" data-language="fr" aria-label="Français (Québec)" aria-pressed="false"><img src="assets/flags/ca.svg" alt=""></button>
+        <button class="language-button is-active" type="button" data-language="en" aria-label="English (United States)" aria-pressed="true"><img src="assets/flags/us.svg" alt=""></button>
+        <button class="language-button" type="button" data-language="fr" aria-label="Français (Canada)" aria-pressed="false"><img src="assets/flags/ca.svg" alt=""></button>
+        <button class="language-button" type="button" data-language="de" aria-label="Deutsch (Deutschland)" aria-pressed="false"><img src="assets/flags/de.svg" alt=""></button>
       </div>
     </div>
   </header>
 
   <div class="navigation-wrap">
     <div class="navigation-inner">
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-navigation" data-i18n="menu">Menü</button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-navigation" data-i18n="menu">Menu</button>
       <nav class="navigation" id="main-navigation" data-navigation aria-label="Main navigation">
-        <a href="index.html" aria-current="page" data-i18n="navReading">Legung</a>
-        <a href="method.html" data-i18n="navMethod">Die Methode</a>
-        <a href="handbook.html" data-i18n="navHandbook">Handbuch</a>
-        <a href="legal.html" data-i18n="navLegal">Impressum &amp; Datenschutz</a>
+        <a href="index.html" aria-current="page" data-i18n="navReading">Reading</a>
+        <a href="method.html" data-i18n="navMethod">The method</a>
+        <a href="handbook.html" data-i18n="navHandbook">Handbook</a>
+        <a href="legal.html" data-i18n="navLegal">Legal &amp; privacy</a>
       </nav>
     </div>
   </div>
@@ -53,25 +53,25 @@
   <main id="main">
     <section class="section hero">
       <div class="container container--narrow">
-        <p class="eyebrow" data-i18n="heroEyebrow">49 Bilder · 10 Positionen · eine Frage</p>
-        <h1 data-i18n="heroTitle">Gedanken werden sichtbar.</h1>
-        <p class="lead" data-i18n="heroText">SINNBILD49 ist kein Wahrsagen. Die Bilder kennen weder die Zukunft noch die Gedanken anderer Menschen. Sie helfen, Gefühle, Hoffnungen und innere Spannungen aus einer neuen Perspektive zu betrachten.</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">49 images · 10 positions · one question</p>
+        <h1 data-i18n="heroTitle">Thoughts become visible.</h1>
+        <p class="lead" data-i18n="heroText">SINNBILD49 is not fortune-telling. The images know neither the future nor another person's thoughts. They help you view feelings, hopes, and inner tensions from a new perspective.</p>
       </div>
     </section>
 
     <section class="section section--compact" id="question-section">
       <div class="container container--narrow">
         <form class="question-card" id="question-form" novalidate>
-          <h2 data-i18n="questionTitle">Welche Frage beschäftigt dich?</h2>
-          <label class="form-label" for="question-input" data-i18n="questionLabel">Deine Frage</label>
-          <textarea class="question-input" id="question-input" maxlength="600" required data-i18n-placeholder="questionPlaceholder" placeholder="Zum Beispiel: Was brauche ich, um in dieser Situation klarer zu handeln?"></textarea>
-          <p class="hint" data-i18n="privacyHint">Bitte verwende keine Namen von Personen oder Firmen, keine Adressen und keine anderen identifizierenden Angaben.</p>
+          <h2 data-i18n="questionTitle">What question is on your mind?</h2>
+          <label class="form-label" for="question-input" data-i18n="questionLabel">Your question</label>
+          <textarea class="question-input" id="question-input" maxlength="600" required data-i18n-placeholder="questionPlaceholder" placeholder="For example: What do I need in order to act more clearly in this situation?"></textarea>
+          <p class="hint" data-i18n="privacyHint">Please do not use names of people or businesses, addresses, or other identifying information.</p>
           <label class="check-row" for="limits-check">
             <input id="limits-check" type="checkbox" required>
-            <span data-i18n="consent">Ich verstehe, dass die Karten keine Tatsachen über die Zukunft oder andere Menschen feststellen.</span>
+            <span data-i18n="consent">I understand that the cards do not establish facts about the future or other people.</span>
           </label>
           <div class="button-row">
-            <button class="button" type="submit" data-i18n="begin">49 Karten auslegen</button>
+            <button class="button" type="submit" data-i18n="begin">Lay out 49 cards</button>
           </div>
           <p class="form-message" id="form-message" role="alert" aria-live="polite"></p>
         </form>
@@ -82,38 +82,38 @@
       <div class="container">
         <div class="draw-heading">
           <div>
-            <h2 data-i18n="drawTitle">Wähle zehn Sinnbilds</h2>
-            <p class="lead" data-i18n="drawText">Das Deck wurde einmal gemischt. Jede Position enthält nun eine feste Karte. Tippe auf zehn Karten – in genau dieser Reihenfolge werden sie später gedeutet.</p>
+            <h2 data-i18n="drawTitle">Choose ten Sinnbilds</h2>
+            <p class="lead" data-i18n="drawText">The deck was shuffled once. Every position now contains a fixed card. Tap ten cards—in exactly this order, they will later be interpreted.</p>
           </div>
           <div class="selection-counter" aria-live="polite">
-            <span data-i18n="selected">Ausgewählt</span>
+            <span data-i18n="selected">Selected</span>
             <strong id="selection-count">0 / 10</strong>
           </div>
         </div>
         <div class="card-grid" id="card-grid" aria-live="polite"></div>
         <div class="button-row draw-actions">
-          <button class="button button--secondary" id="undo-button" type="button" disabled data-i18n="undo">Letzte Auswahl zurücknehmen</button>
-          <button class="button button--secondary" id="reset-button" type="button" data-i18n="reset">Neu beginnen</button>
+          <button class="button button--secondary" id="undo-button" type="button" disabled data-i18n="undo">Undo last choice</button>
+          <button class="button button--secondary" id="reset-button" type="button" data-i18n="reset">Start over</button>
         </div>
       </div>
     </section>
 
     <section class="section" id="result-section" hidden>
       <div class="container">
-        <p class="eyebrow" data-i18n="resultEyebrow">Deine zehn Bilder</p>
-        <h2 data-i18n="resultTitle">Das SINNBILD49-Legebild</h2>
-        <p class="lead" data-i18n="resultText">Die Reihenfolge deiner Auswahl bestimmt die zehn Positionen. Die Legung ist ein Spiegel für deine Gedanken – keine Vorhersage.</p>
+        <p class="eyebrow" data-i18n="resultEyebrow">Your ten images</p>
+        <h2 data-i18n="resultTitle">The SINNBILD49 layout</h2>
+        <p class="lead" data-i18n="resultText">The order of your choices determines the ten positions. The layout is a mirror for your thoughts—not a prediction.</p>
         <div class="reading-layout" id="reading-layout"></div>
 
         <div class="code-panel container--narrow">
-          <h3 data-i18n="codeTitle">Frage und Code</h3>
-          <p data-i18n="codeText">Kopiere diesen Block und sende ihn für eine kostenlose, anonymisierte Deutung per E-Mail. Auf der Website wird deine Frage nicht gespeichert oder automatisch versendet.</p>
+          <h3 data-i18n="codeTitle">Question and code</h3>
+          <p data-i18n="codeText">Copy this block and email it to request a free, anonymized interpretation. Your question is not stored or sent automatically by this website.</p>
           <textarea class="request-block" id="request-block" readonly aria-label="SINNBILD49 request"></textarea>
           <div class="button-row">
-            <button class="button" id="copy-request-button" type="button" data-i18n="copyRequest">Anfrage kopieren</button>
-            <button class="button button--secondary" id="email-button" type="button" data-i18n="openEmail">E-Mail öffnen</button>
-            <button class="button button--secondary" id="copy-ai-button" type="button" data-i18n="copyAI">Für ChatGPT kopieren</button>
-            <button class="button button--secondary" id="result-reset-button" type="button" data-i18n="reset">Neu beginnen</button>
+            <button class="button" id="copy-request-button" type="button" data-i18n="copyRequest">Copy request</button>
+            <button class="button button--secondary" id="email-button" type="button" data-i18n="openEmail">Open email</button>
+            <button class="button button--secondary" id="copy-ai-button" type="button" data-i18n="copyAI">Copy for ChatGPT</button>
+            <button class="button button--secondary" id="result-reset-button" type="button" data-i18n="reset">Start over</button>
           </div>
         </div>
       </div>
@@ -122,13 +122,8 @@
     <section class="section section--paper-deep">
       <div class="container feature-grid">
         <article class="feature-card">
-          <h3 data-i18n="freeTitle">Kostenlos und ohne verborgenes Versprechen</h3>
-          <p data-i18n="freeText">Eine persönliche Antwort kann angefragt werden, solange Kapazität vorhanden ist. Es gibt keine Garantie auf eine bestimmte Antwortzeit. Die Beratung ersetzt keine medizinische, psychologische, rechtliche oder finanzielle Fachberatung.</p>
-        </article>
-        <article class="feature-card">
-          <h3 data-i18n="bookTitle">Das Buch zu SINNBILD49</h3>
-          <p data-i18n="bookText">Das Buch vertieft die 49 Motive, ihre Beziehungen und die Haltung hinter der Methode. Die kostenlose Website bleibt unabhängig davon nutzbar.</p>
-          <a class="button is-disabled" data-amazon-link="auto" aria-disabled="true" data-i18n="comingSoon">Bei Amazon – demnächst</a>
+          <h3 data-i18n="freeTitle">Free, with no hidden promise</h3>
+          <p data-i18n="freeText">A personal response may be requested while capacity is available. No response time is guaranteed. This guidance is not a substitute for medical, mental-health, legal, or financial professional advice.</p>
         </article>
       </div>
     </section>
@@ -138,18 +133,18 @@
     <div class="container footer-grid">
       <div>
         <p class="footer-mark">SINNBILD 49</p>
-        <p data-i18n="footerClaim">Bilder als Spiegel. Entscheidungen bleiben beim Menschen.</p>
+        <p data-i18n="footerClaim">Images as mirrors. Decisions remain human.</p>
         <div class="footer-links">
-          <a href="method.html" data-i18n="navMethod">Die Methode</a>
-          <a href="handbook.html" data-i18n="navHandbook">Handbuch</a>
-          <a href="legal.html" data-i18n="navLegal">Impressum &amp; Datenschutz</a>
+          <a href="method.html" data-i18n="navMethod">The method</a>
+          <a href="handbook.html" data-i18n="navHandbook">Handbook</a>
+          <a href="legal.html" data-i18n="navLegal">Legal &amp; privacy</a>
         </div>
       </div>
       <div>
-        <p><strong data-i18n="footerContact">Kontakt</strong></p>
-        <p data-owner>Pierre C. U. Singer</p>
+        <p><strong data-i18n="footerContact">Contact</strong></p>
+        <p data-owner>Pierre Christian Ulrich Singer, Entrepreneur individuel (EI)</p>
         <p><a data-email href="mailto:pcusinger@gmail.com">pcusinger@gmail.com</a></p>
-        <p>© <span data-year>2026</span> SINNBILD49. <span data-i18n="footerRights">Alle Rechte vorbehalten.</span></p>
+        <p>© <span data-year>2026</span> SINNBILD49. <span data-i18n="footerRights">All rights reserved.</span></p>
       </div>
     </div>
   </footer>

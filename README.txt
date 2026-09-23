@@ -1,9 +1,9 @@
 SINNBILD49.COM – WEBSITE PACKAGE
-Version: 1.0 / 1 September 2026
+Version: 1.1 / 23 September 2026
 
 WHAT IS INCLUDED
 ----------------
-- Responsive website in German (Germany), English (United States), and French (Québec)
+- Responsive website with English (United States) as the default language, plus French (Canada) and German (Germany)
 - 49-card 7×7 selection field
 - One-time random shuffle in the visitor's browser
 - Ten-card neutral layout with fixed positions
@@ -31,15 +31,13 @@ GITHUB PAGES
 CENTRAL SETTINGS
 ----------------
 Open js/config.js to change:
-- owner name
+- legal operator name and status
 - email address
+- telephone number
 - postal address
+- SIRET status
+- localized Singer Shamrock Enterprises brand attribution
 - domain
-- Amazon links for DE, EN/US, and FR/Canada
-
-Amazon buttons remain visibly marked “coming soon” and cannot be clicked until a
-URL is entered. Do not add affiliate parameters unless the required affiliate
-disclosure is also added to the website.
 
 PRIVACY
 -------
@@ -47,19 +45,19 @@ The question and the selected cards are processed only in the browser. Nothing
 is automatically submitted. Clicking the email button opens the visitor's own
 email application. The only local browser setting stored is the language choice.
 
-The legal page currently describes GitHub Pages as the anticipated host. If a
-different hosting provider is used, update the hosting paragraph before launch.
+The legal page identifies GitHub Pages as the host. If a different hosting
+provider is used, update the hosting paragraph before launch.
 Because legal requirements can depend on the final host, commercial status, and
 country of publication, the legal text should be checked once more before the
 public launch.
 
 TEST BEFORE PUBLISHING
 ----------------------
-- Open all four HTML pages and switch through all three languages.
+- Open all four main HTML pages and switch through all three languages.
+- Open 404.html and verify the English-first error message.
 - Complete one full ten-card reading on a phone and a desktop computer.
 - Test copying through HTTPS; local file previews use a compatibility fallback.
 - Test the email button on the intended phone.
-- Add the final Amazon URLs when available.
 - Confirm that pcusinger@gmail.com is the desired public contact address.
 
 IMPORTANT FILES
@@ -68,11 +66,11 @@ index.html          The card reading
 method.html         Philosophy and method
 handbook.html       Ten positions and all 49 cards
 legal.html          Legal notice, privacy, and limits
-js/config.js        Owner, address, email, domain, Amazon links
+js/config.js        Legal operator, address, email, phone, SIRET, brand, domain
 js/cards.js         Card titles, descriptions, and reflection questions
 css/styles.css      Complete visual design and responsive layout
 assets/cards/       49 optimized website card images
 
 COPYRIGHT
 ---------
-SINNBILD49 text, card images, logo, and design are reserved to Pierre C. U. Singer.
+SINNBILD49 text, card images, logo, and design are reserved to Pierre Christian Ulrich Singer, Entrepreneur individuel (EI).

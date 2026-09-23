@@ -1,41 +1,41 @@
 <!doctype html>
-<html lang="de-DE">
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Handbuch – SINNBILD49</title>
-  <meta name="description" content="Der kostenlose SINNBILD49-Deutungsschlüssel mit allen 49 Karten, zehn Positionen und einer Anleitung zur reflektierenden Interpretation.">
+  <meta name="description" content="The free SINNBILD49 interpretation key with all 49 cards, ten positions, and guidance for reflective interpretation.">
   <meta name="theme-color" content="#071a2f">
   <link rel="canonical" href="https://sinnbild49.com/handbook.html">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/config.js"></script>
+  <link rel="stylesheet" href="css/styles.css?v=20260923-1">
+  <script defer src="js/config.js?v=20260923-1"></script>
   <script defer src="js/cards.js"></script>
-  <script defer src="js/i18n.js"></script>
+  <script defer src="js/i18n.js?v=20260923-1"></script>
   <script defer src="js/handbook-utils.js"></script>
-  <script defer src="js/site.js"></script>
+  <script defer src="js/site.js?v=20260923-1"></script>
   <script defer src="js/handbook.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
   <header class="masthead">
     <div class="brand-row">
-      <a class="brand-link" href="index.html" aria-label="SINNBILD49 Startseite"><img src="assets/logo/sinnbild49-logo.png" alt="SINNBILD49"></a>
+      <a class="brand-link" href="index.html" aria-label="SINNBILD49 home"><img src="assets/logo/sinnbild49-logo.png" alt="SINNBILD49"></a>
       <div class="language-switcher" aria-label="Language / Sprache / Langue">
-        <button class="language-button" type="button" data-language="de" aria-label="Deutsch (Deutschland)" aria-pressed="true"><img src="assets/flags/de.svg" alt=""></button>
-        <button class="language-button" type="button" data-language="en" aria-label="English (United States)" aria-pressed="false"><img src="assets/flags/us.svg" alt=""></button>
-        <button class="language-button" type="button" data-language="fr" aria-label="Français (Québec)" aria-pressed="false"><img src="assets/flags/ca.svg" alt=""></button>
+        <button class="language-button is-active" type="button" data-language="en" aria-label="English (United States)" aria-pressed="true"><img src="assets/flags/us.svg" alt=""></button>
+        <button class="language-button" type="button" data-language="fr" aria-label="Français (Canada)" aria-pressed="false"><img src="assets/flags/ca.svg" alt=""></button>
+        <button class="language-button" type="button" data-language="de" aria-label="Deutsch (Deutschland)" aria-pressed="false"><img src="assets/flags/de.svg" alt=""></button>
       </div>
     </div>
   </header>
   <div class="navigation-wrap">
     <div class="navigation-inner">
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-navigation" data-i18n="menu">Menü</button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-navigation" data-i18n="menu">Menu</button>
       <nav class="navigation" id="main-navigation" data-navigation aria-label="Main navigation">
-        <a href="index.html" data-i18n="navReading">Legung</a>
-        <a href="method.html" data-i18n="navMethod">Die Methode</a>
-        <a href="handbook.html" aria-current="page" data-i18n="navHandbook">Handbuch</a>
-        <a href="legal.html" data-i18n="navLegal">Impressum &amp; Datenschutz</a>
+        <a href="index.html" data-i18n="navReading">Reading</a>
+        <a href="method.html" data-i18n="navMethod">The method</a>
+        <a href="handbook.html" aria-current="page" data-i18n="navHandbook">Handbook</a>
+        <a href="legal.html" data-i18n="navLegal">Legal &amp; privacy</a>
       </nav>
     </div>
   </div>
@@ -43,25 +43,25 @@
   <main id="main">
     <section class="section page-intro">
       <div class="container container--narrow">
-        <p class="eyebrow" data-i18n="handbookEyebrow">Der Deutungsschlüssel</p>
-        <h1 data-i18n="handbookTitle">Alle 49 Sinnbilds</h1>
-        <p class="lead" data-i18n="handbookIntro">Jede Karte bietet ein Bild, eine mögliche Lesart und eine Reflexionsfrage. Keine Bedeutung ist eine geheime Botschaft oder unumstößliche Wahrheit.</p>
+        <p class="eyebrow" data-i18n="handbookEyebrow">The interpretation key</p>
+        <h1 data-i18n="handbookTitle">All 49 Sinnbilds</h1>
+        <p class="lead" data-i18n="handbookIntro">Each card offers an image, a possible reading, and a reflection question. No meaning is a secret message or an absolute truth.</p>
       </div>
     </section>
 
     <section class="section section--compact section--paper-deep">
       <div class="container">
-        <h2 data-i18n="positionsTitle">Die zehn Positionen</h2>
-        <p class="lead" style="margin-left:0" data-i18n="positionsIntro">Eine Karte erhält ihre konkrete Aufgabe erst durch die Position, an der sie im Legebild erscheint.</p>
+        <h2 data-i18n="positionsTitle">The ten positions</h2>
+        <p class="lead" style="margin-left:0" data-i18n="positionsIntro">A card receives its specific task from the position where it appears in the layout.</p>
         <div class="positions-list" id="positions-list"></div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 data-i18n="catalogTitle">Kartenverzeichnis</h2>
+        <h2 data-i18n="catalogTitle">Card directory</h2>
         <div class="catalog-toolbar">
-          <label for="field-filter" data-i18n="filterLabel">Themenfeld wählen</label>
+          <label for="field-filter" data-i18n="filterLabel">Choose a theme</label>
           <select id="field-filter" aria-label="Card theme"></select>
         </div>
         <div class="handbook-cards" id="handbook-cards"></div>
@@ -70,12 +70,12 @@
 
     <section class="section section--paper-deep">
       <div class="container container--narrow ai-panel">
-        <h2 data-i18n="aiTitle">Mit ChatGPT selbst deuten</h2>
-        <p data-i18n="aiText">Der folgende Text enthält Methode, Positionen und alle Kartenbeschreibungen. Kopiere ihn zusammen mit deiner Frage und deinem Code in einen neuen Chat. Die Antwort soll Möglichkeiten ordnen, keine Zukunft behaupten.</p>
+        <h2 data-i18n="aiTitle">Interpret it yourself with ChatGPT</h2>
+        <p data-i18n="aiText">The following text contains the method, positions, and all card descriptions. Copy it together with your question and code into a new chat. The response should organize possibilities, not claim to predict the future.</p>
         <div class="button-row">
-          <button class="button" type="button" id="copy-handbook-button" data-i18n="copyHandbook">Handbuch und KI-Anweisung kopieren</button>
-          <button class="button button--secondary" type="button" id="download-handbook-button" data-i18n="downloadHandbook">Als Textdatei herunterladen</button>
-          <a class="button button--secondary" href="index.html" data-i18n="backHome">Zur Legung</a>
+          <button class="button" type="button" id="copy-handbook-button" data-i18n="copyHandbook">Copy handbook and AI instructions</button>
+          <button class="button button--secondary" type="button" id="download-handbook-button" data-i18n="downloadHandbook">Download as text file</button>
+          <a class="button button--secondary" href="index.html" data-i18n="backHome">Go to the reading</a>
         </div>
       </div>
     </section>
@@ -85,18 +85,18 @@
     <div class="container footer-grid">
       <div>
         <p class="footer-mark">SINNBILD 49</p>
-        <p data-i18n="footerClaim">Bilder als Spiegel. Entscheidungen bleiben beim Menschen.</p>
+        <p data-i18n="footerClaim">Images as mirrors. Decisions remain human.</p>
         <div class="footer-links">
-          <a href="index.html" data-i18n="navReading">Legung</a>
-          <a href="method.html" data-i18n="navMethod">Die Methode</a>
-          <a href="legal.html" data-i18n="navLegal">Impressum &amp; Datenschutz</a>
+          <a href="index.html" data-i18n="navReading">Reading</a>
+          <a href="method.html" data-i18n="navMethod">The method</a>
+          <a href="legal.html" data-i18n="navLegal">Legal &amp; privacy</a>
         </div>
       </div>
       <div>
-        <p><strong data-i18n="footerContact">Kontakt</strong></p>
-        <p data-owner>Pierre C. U. Singer</p>
+        <p><strong data-i18n="footerContact">Contact</strong></p>
+        <p data-owner>Pierre Christian Ulrich Singer, Entrepreneur individuel (EI)</p>
         <p><a data-email href="mailto:pcusinger@gmail.com">pcusinger@gmail.com</a></p>
-        <p>© <span data-year>2026</span> SINNBILD49. <span data-i18n="footerRights">Alle Rechte vorbehalten.</span></p>
+        <p>© <span data-year>2026</span> SINNBILD49. <span data-i18n="footerRights">All rights reserved.</span></p>
       </div>
     </div>
   </footer>
